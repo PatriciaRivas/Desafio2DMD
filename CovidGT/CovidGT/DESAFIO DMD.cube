@@ -1,0 +1,414 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9f390251-a8d9-4164-bb2c-9302e7da886c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DESAFIO DMD</ID>
+  <Name>DESAFIO DMD</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6383" scrolltop="-2130" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17595" y="9260" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="2020_GT_Region_Mobility_Report" left="7809" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="8255" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003f20000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_2020_GT_Region_Mobility_Report" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTiempo" left="20" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4789" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b512000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimTiempo" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-6383</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2130</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="3b35ec2a-46e3-4c3f-83e2-62a17ad852b7">
+      <ID>Dim Tiempo 1</ID>
+      <Name>Dim Tiempo 1</Name>
+      <DimensionID>Dim Tiempo 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="22f81485-e61a-48f7-a9a3-21e5c5a12d57">
+          <AttributeID>PK Fecha</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4539c0a6-335b-427b-8888-34252b1265fc">
+          <AttributeID>Año Nombre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cc38cfb5-2613-417a-8785-894ac1fa1198">
+          <AttributeID>Semestre Nombre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7a7f6cf2-b1a2-44a6-9f9c-c3b297e7934f">
+          <AttributeID>Mes Nombre</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="49ec6d8f-cae2-47bf-8fc5-940922446609">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="d1fa939d-d061-4473-8a9c-284ea028d8bb">
+      <ID>2020 GT Region Mobility Report 1</ID>
+      <Name>2020 GT Region Mobility Report 1</Name>
+      <DimensionID>2020 GT Region Mobility Report 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3b2283e5-2669-4c99-9e17-9a2f17553abf">
+          <AttributeID>Country Region</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="64896769-30f7-483a-a416-70bc966b3b70">
+          <AttributeID>Sub Region 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8498eb06-a5f7-4226-be40-9eb0c3ec56ba">
+          <AttributeID>Sub Region 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="32105be1-d34e-4960-891a-91f8a8f83bd5">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ed1167da-a10a-4211-802d-90ad18ee1983">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7a4a5329-95f7-4b7f-bca9-fee7a6aea3d3">
+          <AttributeID>Country Region Code</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="ed3b0fbb-387f-4243-b1ad-36ff7e1b6e7a">
+          <HierarchyID>Jerarquía 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="a71de1b4-ed35-426f-b8ae-9e675cc8190e">
+      <ID>Dim Tiempo</ID>
+      <Name>Dim Tiempo</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="78b410d7-f593-4bd0-bbc0-4b9c6dbbee67">
+          <ID>Recuento PK Fecha</ID>
+          <Name>Recuento PK Fecha</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="eae91050-5d89-4fbe-86f3-81241e46c243">
+            <DataType>Date</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c1a366e1-437d-4a55-b445-45749b95aac9">
+              <TableID>dbo_DimTiempo</TableID>
+              <ColumnID>PK_Fecha</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3e0fa628-e01d-434d-9e76-3ffa0e094442">
+          <ID>Día Del Año</ID>
+          <Name>Día Del Año</Name>
+          <Source dwd:design-time-name="f9ebe4b0-d4f8-4f93-9c78-74147fc372f5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4e985736-639f-44cd-906d-b87d5f3ca50d">
+              <TableID>dbo_DimTiempo</TableID>
+              <ColumnID>Día_Del_Año</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="143d711b-292d-48d6-8a9b-ce68e32a6c31">
+          <ID>Día Del Semestre</ID>
+          <Name>Día Del Semestre</Name>
+          <Source dwd:design-time-name="eccc414d-6bc1-48f8-bed5-30d0363e860a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f92f8e4b-0a6a-4fda-ae90-87af602c70c9">
+              <TableID>dbo_DimTiempo</TableID>
+              <ColumnID>Día_Del_Semestre</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c97b0872-8e2c-411f-b1c1-6de7bcb30aab">
+          <ID>Día Del Mes</ID>
+          <Name>Día Del Mes</Name>
+          <Source dwd:design-time-name="2851cac3-084e-4be5-87a0-b817a0fd0425">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1e984f0c-f5e6-4b67-a756-d41986d76835">
+              <TableID>dbo_DimTiempo</TableID>
+              <ColumnID>Día_Del_Mes</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0a94d590-3df9-43b4-b396-f6bb499bd534">
+          <ID>Mes Del Año</ID>
+          <Name>Mes Del Año</Name>
+          <Source dwd:design-time-name="2f1e8024-70b8-441d-9f57-df723c3e9900">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7a83e555-d429-4404-8959-9c056b7d6582">
+              <TableID>dbo_DimTiempo</TableID>
+              <ColumnID>Mes_Del_Año</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ebb0ef26-80c4-4322-bfad-913112d7f5d2">
+          <ID>Mes Del Semestre</ID>
+          <Name>Mes Del Semestre</Name>
+          <Source dwd:design-time-name="35b854be-7a43-4d8d-8125-2e1f8a1e68b3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a0af3245-2797-47c0-8f9a-d260de6920c9">
+              <TableID>dbo_DimTiempo</TableID>
+              <ColumnID>Mes_Del_Semestre</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="335dc47f-853a-4949-a0d1-cee0158811b5">
+          <ID>Semestre Del Año</ID>
+          <Name>Semestre Del Año</Name>
+          <Source dwd:design-time-name="92ab9282-5a28-44f4-8b90-59856021d6cc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7dedbcd9-6f2d-4dc1-a20a-4bfecdf27441">
+              <TableID>dbo_DimTiempo</TableID>
+              <ColumnID>Semestre_Del_Año</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1f2f20a9-377c-4210-bb8d-166b73f31e8b">
+          <ID>Recuento Dim Tiempo</ID>
+          <Name>Recuento Dim Tiempo</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9b4845fa-3fc9-4328-888a-8bd7d0eaa351">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="42ab3565-3baa-48b9-a6a0-2f65eceda8dc">
+              <TableID>dbo_DimTiempo</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="40a11608-bd70-4d79-8232-ab59b85f1632">
+          <CubeDimensionID>Dim Tiempo 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e86da89a-3cf1-42dc-b44f-5d5b01ebd3c1">
+              <AttributeID>PK Fecha</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bcce612a-fb78-47f6-8ae9-85df68a078cf">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eff4cc29-802f-466b-b53b-91980e02983d">
+                    <TableID>dbo_DimTiempo</TableID>
+                    <ColumnID>PK_Fecha</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="bc7bd99a-6c29-4c1f-9b5f-1924d936c3d5">
+      <ID>2020 GT Region Mobility Report</ID>
+      <Name>2020 GT Region Mobility Report</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="9bc51aba-8feb-40ff-8015-a1f60d38b1ae">
+          <ID>Retail And Recreation Percent Change From Baseline</ID>
+          <Name>Retail And Recreation Percent Change From Baseline</Name>
+          <Source dwd:design-time-name="b3e28cc2-636f-4176-9db5-6d333fc44361">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="99214b08-462a-409c-ab50-099af6f8293c">
+              <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+              <ColumnID>retail_and_recreation_percent_change_from_baseline</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="45875665-cec3-4c2e-ae55-32ef35869bb0">
+          <ID>Grocery And Pharmacy Percent Change From Baseline</ID>
+          <Name>Grocery And Pharmacy Percent Change From Baseline</Name>
+          <Source dwd:design-time-name="4af31169-b49c-4585-adac-c687d95e60c2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e117a12c-8e8c-47fd-b4c6-8cb8dee00f28">
+              <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+              <ColumnID>grocery_and_pharmacy_percent_change_from_baseline</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="156cf80c-8ab0-4f2a-aac3-4b7c124072d3">
+          <ID>Parks Percent Change From Baseline</ID>
+          <Name>Parks Percent Change From Baseline</Name>
+          <Source dwd:design-time-name="a5e04167-854f-4f29-a0c3-c03253614157">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="90350a42-952e-4378-8b52-876a38bd51b5">
+              <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+              <ColumnID>parks_percent_change_from_baseline</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6d31e746-e76e-4787-a71e-c0f4a04c5647">
+          <ID>Transit Stations Percent Change From Baseline</ID>
+          <Name>Transit Stations Percent Change From Baseline</Name>
+          <Source dwd:design-time-name="75ff9491-2036-44f5-8618-7f1636bab947">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d24be877-c7a0-493b-aa8c-ad00a3e63c15">
+              <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+              <ColumnID>transit_stations_percent_change_from_baseline</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ba4a4352-c4d2-4577-811d-fded40a51f54">
+          <ID>Workplaces Percent Change From Baseline</ID>
+          <Name>Workplaces Percent Change From Baseline</Name>
+          <Source dwd:design-time-name="04447e5f-13ee-446a-8eff-cfb1334cbdc4">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cf0d3f69-293e-4868-b426-5b8f97835ee7">
+              <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+              <ColumnID>workplaces_percent_change_from_baseline</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3d72ec22-de31-44f5-bdea-066f68ed32e8">
+          <ID>Residential Percent Change From Baseline</ID>
+          <Name>Residential Percent Change From Baseline</Name>
+          <Source dwd:design-time-name="a52d5fe0-bcbd-40d7-a78c-3737d52e4af9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="822385b4-41fc-4a44-87a0-805042e7639c">
+              <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+              <ColumnID>residential_percent_change_from_baseline</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2002e622-4ffa-4fcc-995a-cc1b462d42f3">
+          <ID>Recuento 2020 GT Region Mobility Report</ID>
+          <Name>Recuento 2020 GT Region Mobility Report</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="6ad5a467-8874-40cf-a128-57a919c09119">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="acbfe61a-af36-476d-aae1-c8160301136a">
+              <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4dd4be4d-b7e7-42b0-bc58-c444b305d4c5">
+          <CubeDimensionID>Dim Tiempo 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="96eb0e1c-3bcb-403e-ad8f-3bc561c742d7">
+              <AttributeID>PK Fecha</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3b062a97-cbc6-4d96-8954-78debdc7a330">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8ab4daa0-e05c-4dd5-bd1f-3ec18fcc62c1">
+                    <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+                    <ColumnID>date</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4d1f0df5-75b2-43f8-8c3f-3290c385cc61">
+          <CubeDimensionID>2020 GT Region Mobility Report 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6352a4ab-3da2-4897-9112-bfa2b5374a95">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7f0099ab-e3b7-4a12-9859-007cc3c2d64c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2cb8d30f-f196-40be-b436-64e6da9cedde">
+                    <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+                    <ColumnID>Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="27ec021f-b30c-458b-a384-ffba640b4e66">
+    <DataSourceViewID>DESAFIO DMD 1</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="7fcc2019-eaf6-4571-9e71-6639ac5049fe">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+El comando CALCULATE controla la agregación de celdas hoja en el cubo.
+Si se elimina o modifica el comando CALCULATE, se ven afectados los datos del cubo.
+Solo debe editar este comando si especifica manualmente cómo se agrega el cubo.
+*/
+CALCULATE; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>
