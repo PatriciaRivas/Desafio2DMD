@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="faae6b10-41ad-4ac3-8733-d4ae6ac5aa3e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="de548004-236a-4b20-8092-743a1ed55ecb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>2020 GT Region Mobility Report 1</ID>
   <Name>2020 GT Region Mobility Report</Name>
   <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
@@ -73,33 +73,13 @@
             <Shape Id="Id" Expanded="true">
               <Attributes>
                 <Attribute Id="Id" />
+                <Attribute Id="Country Region" />
+                <Attribute Id="Country Region Code" />
+                <Attribute Id="Date" />
+                <Attribute Id="Sub Region 1" />
+                <Attribute Id="Sub Region 2" />
               </Attributes>
               <Position x="20" y="20" />
-            </Shape>
-            <Shape Id="Country Region Code" Expanded="false">
-              <Attributes>
-                <Attribute Id="Country Region Code" />
-              </Attributes>
-              <Position x="211" y="20" />
-            </Shape>
-            <Shape Id="Country Region" Expanded="true">
-              <Attributes>
-                <Attribute Id="Country Region" />
-              </Attributes>
-              <Position x="402" y="20" />
-            </Shape>
-            <Shape Id="Sub Region 1" Expanded="true">
-              <Attributes>
-                <Attribute Id="Sub Region 1" />
-              </Attributes>
-              <Position x="593" y="20" />
-            </Shape>
-            <Shape Id="Sub Region 2" Expanded="false">
-              <Attributes>
-                <Attribute Id="Sub Region 2" />
-                <Attribute Id="Date" />
-              </Attributes>
-              <Position x="785" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -108,89 +88,55 @@
   </Annotations>
   <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c107230c-e526-462d-8401-0a0419d51ee4">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f365c2e6-b864-40ac-b25b-38256977a336">
     <DataSourceViewID>DESAFIO DMD 1</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="8b1f3bca-967b-4320-9e20-e1b96b87670a">
+  <ErrorConfiguration dwd:design-time-name="25110172-1ee4-45ae-b280-56903cdc4c52">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="829182c2-a781-47fa-9251-32ed9db67e33">
+    <Attribute dwd:design-time-name="757ed05b-589b-4c95-b102-2446f4eac87c">
       <ID>Country Region</ID>
       <Name>Country Region</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="245c72fc-12e4-4f30-9edd-d597bbf0b6ce">
+        <KeyColumn dwd:design-time-name="31e30b5b-59fe-4c6e-8b7a-0bf09e52e14f">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b92334d8-ff7d-486a-938e-5ea12713139f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4713f112-0056-4c2c-9f1a-da937abf78b4">
             <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
             <ColumnID>country_region</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="aafe7abe-821a-4e96-a685-61dc8e72bdec">
-          <AttributeID>Sub Region 1</AttributeID>
-          <Name>Sub Region 1</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="70d5cd93-161c-4189-a07d-4840a58601ac">
+    <Attribute dwd:design-time-name="009aa230-b319-4fc5-a0ee-b2a6377b9075">
       <ID>Sub Region 1</ID>
       <Name>Sub Region 1</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="99407fd7-b02b-423d-bbd3-330b28552452">
+        <KeyColumn dwd:design-time-name="1c2c2590-f8e4-49fc-ac3f-58bb998ce43e">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="125fc18e-17ed-43d9-b505-54ac44af70fc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e557a643-1a04-411b-afea-742c441171d5">
             <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
             <ColumnID>sub_region_1</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="8f963f04-4c58-4849-81c7-b46d879a4433">
-          <AttributeID>Sub Region 2</AttributeID>
-          <Name>Sub Region 2</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6532821c-c725-4571-a0b4-e06dab831d55">
-      <ID>Sub Region 2</ID>
-      <Name>Sub Region 2</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="3dcd68d3-6ffc-4b14-ae91-e58fe294bc10">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="af845ae2-b7a6-4f2c-9694-3a9745e34d4d">
-            <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
-            <ColumnID>sub_region_2</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="3d7ec306-3b7a-493d-be1a-8d46ffb70612">
-          <AttributeID>Date</AttributeID>
-          <Name>Date</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="285790f5-45c8-4ed1-8864-e1612b588810">
+    <Attribute dwd:design-time-name="b1a9fc5c-bd1d-45c2-82a1-9e809eeae46d">
       <ID>Date</ID>
       <Name>Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fb95248c-9949-40cc-b687-0134c7dcd79b">
+        <KeyColumn dwd:design-time-name="76629a57-d83d-4a38-b7c7-f201a5d748ff">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e034ccb3-fd0a-474e-8015-b9b45cfe9a4b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="30f1dc7d-7c7a-40ae-afeb-4e22d08421d5">
             <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
             <ColumnID>date</ColumnID>
           </Source>
@@ -199,57 +145,83 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2bf73714-501c-4671-b722-1159ee368caa">
+    <Attribute dwd:design-time-name="96781fee-ace9-4cb7-ae5c-9d8acd470f3f">
       <ID>Id</ID>
       <Name>Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="24eb4b0b-7326-4a8d-9d81-f41a25a934d3">
+        <KeyColumn dwd:design-time-name="2eeb9461-c689-4846-8f19-64e6ee493b57">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8d3f770-dd47-40c2-a7d9-d61c287535ca">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1de48da4-d147-42ac-96f0-30f38523fcfe">
             <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
             <ColumnID>Id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="b1a58433-1f04-4e73-8785-06d16bae2f22">
+        <AttributeRelationship dwd:design-time-name="21102453-f56b-43d2-af69-9e14310174ad">
           <AttributeID>Country Region Code</AttributeID>
           <Name>Country Region Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1515acaf-5511-4022-bc67-4428ea838c2e">
+          <AttributeID>Country Region</AttributeID>
+          <Name>Country Region</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2d80fc11-da2d-4823-bf32-a116ca99ebb9">
+          <AttributeID>Sub Region 1</AttributeID>
+          <Name>Sub Region 1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="84cd53a2-1ffc-4fdd-b541-741eb91e959c">
+          <AttributeID>Sub Region 2</AttributeID>
+          <Name>Sub Region 2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="982672af-12e1-4b88-8662-53f13b8f42e2">
+          <AttributeID>Date</AttributeID>
+          <Name>Date</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="57c7422b-0019-491f-af68-af9022c61d42">
+    <Attribute dwd:design-time-name="c924f695-e190-4bc3-b107-62ba90a4dba5">
       <ID>Country Region Code</ID>
       <Name>Country Region Code</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ce7813b0-3991-4a8e-b04e-f287f58c87f1">
+        <KeyColumn dwd:design-time-name="509c119f-c441-473d-8a4d-9ddf88eb2874">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="01111154-f2c8-4610-a64b-561191c9bd2c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e9adc80-8750-4000-b768-15732a000982">
             <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
             <ColumnID>country_region_code</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="bbe61e6d-e188-4b43-ab62-6452e6908975">
-          <AttributeID>Country Region</AttributeID>
-          <Name>Country Region</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cea25b7f-6a89-48ed-b25b-f41e7df4ea05">
+      <ID>Sub Region 2</ID>
+      <Name>Sub Region 2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="55d8f810-03fd-4a9c-92a3-4190c55d9749">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9661c6af-5c75-4a51-b2bd-b94b380361ed">
+            <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+            <ColumnID>sub_region_2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="9a364568-1202-4c82-86b8-045543777395">
+    <Hierarchy dwd:design-time-name="b08f1983-253b-4e70-b7a6-ea4217efb57b">
       <ID>Jerarquía 1</ID>
       <Name>Jerarquía 1</Name>
       <Levels>
-        <Level dwd:design-time-name="3191b948-784f-4991-9146-306d746d7ef3">
+        <Level dwd:design-time-name="15f1252d-052f-453a-8249-2eb672664172">
           <ID>Id</ID>
           <Name>Id</Name>
           <SourceAttributeID>Id</SourceAttributeID>

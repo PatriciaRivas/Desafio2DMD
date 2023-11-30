@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="74b23052-f17f-4db8-ad4c-1886ea2fa01f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6912c0e1-e590-442e-9ea5-d1e2a30f8b18" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>DESAFIO DMD 1</ID>
   <Name>DESAFIO DMD</Name>
   <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
@@ -31,7 +31,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1081" scrolltop="-2764" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18124" y="10583" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3968" scrolltop="-2526" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18124" y="12674" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -64,12 +64,32 @@
                   </layoutobject>
                   <shape groupshapeid="0" groupnode="0" />
                 </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4489" top="-99" logicalid="7" controlid="5" masterid="0" hint1="0" hint2="0" width="1827" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[2020_GT_Region_Mobility_Report-DimTiempo]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="19" destattachpoint="30" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="4789" y="300" />
+                    <point x="5402" y="300" />
+                    <point x="5402" y="327" />
+                    <point x="6016" y="327" />
+                  </connector>
+                </ddscontrol>
               </dds>
-</DiagramLayout>
+            </DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
-            <DiagramViewPortLeft>1081</DiagramViewPortLeft>
-            <DiagramViewPortTop>-2764</DiagramViewPortTop>
+            <DiagramViewPortLeft>-3968</DiagramViewPortLeft>
+            <DiagramViewPortTop>-2526</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>100</DiagramZoom>
@@ -167,27 +187,48 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
+                  <xs:element name="Jerarquía_x0020_Dim_x0020_Tiempo_x0020_Cálculos" msprop:Description="Columna creada por el Asistente de Business Intelligence. Se ha creado un atributo en la dimensión de tiempo basado en esta columna. Si se elimina, los cálculos de inteligencia de tiempo definidos en el script de cálculo ya no serán válidos." msprop:design-time-name="d1961278-fc5c-44b6-a9d9-7229b0841255" msprop:IsLogical="True" msprop:ComputedColumnExpression="'Actual Dim Tiempo'" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="19" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Jerarquía_x0020_Dim_x0020_Tiempo_x0020_Cálculos_x0020_1" msprop:Description="Columna creada por el Asistente de Business Intelligence. Se ha creado un atributo en la dimensión de tiempo basado en esta columna. Si se elimina, los cálculos de inteligencia de tiempo definidos en el script de cálculo ya no serán válidos." msprop:design-time-name="f2d41a26-9661-4b53-8acb-60b9c5dafaff" msprop:IsLogical="True" msprop:ComputedColumnExpression="'Actual Dim Tiempo'" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="19" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Jerarquía_x0020_Dim_x0020_Tiempo_x0020_Cálculos_x0020_2" msprop:Description="Columna creada por el Asistente de Business Intelligence. Se ha creado un atributo en la dimensión de tiempo basado en esta columna. Si se elimina, los cálculos de inteligencia de tiempo definidos en el script de cálculo ya no serán válidos." msprop:design-time-name="9ebfc8d7-3019-448f-ab2f-1eeb2fa40735" msprop:IsLogical="True" msprop:ComputedColumnExpression="'Actual Dim Tiempo'" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="19" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_2020_GT_Region_Mobility_Report" msprop:DbSchemaName="dbo" msprop:design-time-name="8344f845-7f0a-4d10-92fe-0db83afebdb3" msprop:FriendlyName="DimCovid" msprop:TableType="Table" msprop:DbTableName="2020_GT_Region_Mobility_Report">
+            <xs:element name="dbo_2020_GT_Region_Mobility_Report" msprop:QueryBuilder="SpecificQueryBuilder" msprop:IsLogical="True" msprop:design-time-name="8344f845-7f0a-4d10-92fe-0db83afebdb3" msprop:QueryDefinition="SELECT        country_region_code, country_region, ISNULL(sub_region_1, '') AS sub_region_1, ISNULL(sub_region_2, '') AS sub_region_2, ISNULL(metro_area, '') AS metro_area, ISNULL(iso_3166_2_code, '') AS iso_3166_2_code, &#xD;&#xA;                         ISNULL(census_fips_code, '') AS census_fips_code, place_id, [date], ISNULL(retail_and_recreation_percent_change_from_baseline, '') AS retail_and_recreation_percent_change_from_baseline, &#xD;&#xA;                         ISNULL(grocery_and_pharmacy_percent_change_from_baseline, '') AS grocery_and_pharmacy_percent_change_from_baseline, ISNULL(parks_percent_change_from_baseline, '') AS parks_percent_change_from_baseline, &#xD;&#xA;                         ISNULL(transit_stations_percent_change_from_baseline, '') AS transit_stations_percent_change_from_baseline, ISNULL(workplaces_percent_change_from_baseline, '') AS workplaces_percent_change_from_baseline, &#xD;&#xA;                         ISNULL(residential_percent_change_from_baseline, '') AS residential_percent_change_from_baseline, Id&#xD;&#xA;FROM            [2020_GT_Region_Mobility_Report]" msprop:FriendlyName="DimCovid" msprop:TableType="View" msprop:DbTableName="2020_GT_Region_Mobility_Report">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="country_region_code" msprop:FriendlyName="country_region_code" msprop:DbColumnName="country_region_code" msprop:design-time-name="a410c5a9-93f3-4f68-982a-9e6611947b12">
+                  <xs:element name="country_region_code" msprop:FriendlyName="country_region_code" msprop:DbColumnName="country_region_code" msprop:design-time-name="a410c5a9-93f3-4f68-982a-9e6611947b12" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="50" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="country_region" msprop:FriendlyName="country_region" msprop:DbColumnName="country_region" msprop:design-time-name="7cf0e150-6e98-4e1e-bdc9-db2049bca48f">
+                  <xs:element name="country_region" msprop:FriendlyName="country_region" msprop:DbColumnName="country_region" msprop:design-time-name="7cf0e150-6e98-4e1e-bdc9-db2049bca48f" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="50" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="sub_region_1" msprop:FriendlyName="sub_region_1" msprop:DbColumnName="sub_region_1" msprop:design-time-name="393c6dd1-0c73-4746-bcf7-f6dc54487249">
+                  <xs:element name="sub_region_1" msprop:FriendlyName="sub_region_1" msprop:DbColumnName="sub_region_1" msprop:design-time-name="393c6dd1-0c73-4746-bcf7-f6dc54487249" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="100" />
@@ -222,14 +263,14 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="place_id" msprop:FriendlyName="place_id" msprop:DbColumnName="place_id" msprop:design-time-name="4855a607-1986-4449-a838-eabcbd96c049">
+                  <xs:element name="place_id" msprop:FriendlyName="place_id" msprop:DbColumnName="place_id" msprop:design-time-name="4855a607-1986-4449-a838-eabcbd96c049" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="50" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="date" msprop:FriendlyName="date" msprop:DbColumnName="date" msprop:design-time-name="5f672d6c-ca33-4269-bcc0-dbfa6b3f939a" type="xs:dateTime" />
+                  <xs:element name="date" msprop:FriendlyName="date" msprop:DbColumnName="date" msprop:design-time-name="5f672d6c-ca33-4269-bcc0-dbfa6b3f939a" type="xs:dateTime" minOccurs="0" />
                   <xs:element name="retail_and_recreation_percent_change_from_baseline" msprop:FriendlyName="retail_and_recreation_percent_change_from_baseline" msprop:DbColumnName="retail_and_recreation_percent_change_from_baseline" msprop:design-time-name="67692d31-a92b-4ff6-b240-c7d19f80e9e3" type="xs:short" minOccurs="0" />
                   <xs:element name="grocery_and_pharmacy_percent_change_from_baseline" msprop:FriendlyName="grocery_and_pharmacy_percent_change_from_baseline" msprop:DbColumnName="grocery_and_pharmacy_percent_change_from_baseline" msprop:design-time-name="ab84bcc0-eae6-4310-be9d-95ecdd5895b1" type="xs:short" minOccurs="0" />
                   <xs:element name="parks_percent_change_from_baseline" msprop:FriendlyName="parks_percent_change_from_baseline" msprop:DbColumnName="parks_percent_change_from_baseline" msprop:design-time-name="3ec2ba48-8455-4d0b-b264-883ec9aa7cda" type="xs:short" minOccurs="0" />
@@ -251,6 +292,11 @@
           <xs:field xpath="Id" />
         </xs:unique>
       </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="_x0032_020_GT_Region_Mobility_Report-DimTiempo" msdata:parent="dbo_DimTiempo" msdata:child="dbo_2020_GT_Region_Mobility_Report" msdata:parentkey="PK_Fecha" msdata:childkey="date" msprop:Description="" msprop:IsLogical="True" />
+        </xs:appinfo>
+      </xs:annotation>
     </xs:schema>
     <DESAFIO_x0020_DMD_x0020_1 xmlns="" />
   </Schema>

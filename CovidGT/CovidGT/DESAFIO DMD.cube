@@ -1,14 +1,14 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9f390251-a8d9-4164-bb2c-9302e7da886c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="62caf4c6-484f-4dbb-885f-7d19acf25099" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>DESAFIO DMD</ID>
   <Name>DESAFIO DMD</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6383" scrolltop="-2130" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17595" y="9260" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6383" scrolltop="-6482" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14711" y="7938" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="2020_GT_Region_Mobility_Report" left="7809" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="8255" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCovid" left="2517" top="-1376" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="8255" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e00003f20000088130000" />
             </control>
@@ -30,7 +30,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTiempo" left="20" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4789" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTiempo" left="-3631" top="-1482" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="4789" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e0000b512000088130000" />
             </control>
@@ -40,6 +40,26 @@
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="858" top="-1581" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="1959" height="805" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[2020_GT_Region_Mobility_Report-DimTiempo]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="19" destattachpoint="30" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1158" y="-1182" />
+              <point x="1837" y="-1182" />
+              <point x="1837" y="-1076" />
+              <point x="2517" y="-1076" />
+            </connector>
           </ddscontrol>
         </dds>
       </Value>
@@ -62,175 +82,193 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-2130</Value>
+      <Value>-6482</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>20</Value>
+      <Value>-3631</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>0</Value>
+      <Value>-1482</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="3b35ec2a-46e3-4c3f-83e2-62a17ad852b7">
-      <ID>Dim Tiempo 1</ID>
-      <Name>Dim Tiempo 1</Name>
+    <Dimension dwd:design-time-name="309ac924-6fe3-447f-8e9e-85898597f235">
+      <ID>Dim Tiempo</ID>
+      <Name>Dim Tiempo</Name>
       <DimensionID>Dim Tiempo 1</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="22f81485-e61a-48f7-a9a3-21e5c5a12d57">
+        <Attribute dwd:design-time-name="faa8e655-9af3-4346-a66b-7ad022310e98">
           <AttributeID>PK Fecha</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4539c0a6-335b-427b-8888-34252b1265fc">
+        <Attribute dwd:design-time-name="58e8e9b2-c56a-47ec-86e0-e2665df59c51">
           <AttributeID>Año Nombre</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="cc38cfb5-2613-417a-8785-894ac1fa1198">
+        <Attribute dwd:design-time-name="af8e6184-bad5-45ca-94de-c63cb009df7d">
           <AttributeID>Semestre Nombre</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7a7f6cf2-b1a2-44a6-9f9c-c3b297e7934f">
+        <Attribute dwd:design-time-name="7601cd88-caba-4a64-8338-2bc56c796c4f">
           <AttributeID>Mes Nombre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c50a9c80-f3ad-4108-a374-eae569e301bb">
+          <AttributeID>Año</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1493493f-76ab-4afa-a224-b2149c2be54e">
+          <AttributeID>Mes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5c10b806-1958-4b7c-95bb-29585fc69552">
+          <AttributeID>Semestre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a41ec18f-4895-42f6-ba3b-faf2176360c7">
+          <AttributeID>Jerarquía Dim Tiempo Cálculos</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5b04bb9b-dc70-4273-bc90-52e5510e2cdc">
+          <AttributeID>Jerarquía Dim Tiempo Cálculos 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dce424cf-5bec-4191-b3ac-b96fcf3ce667">
+          <AttributeID>Jerarquía Dim Tiempo Cálculos 2</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="49ec6d8f-cae2-47bf-8fc5-940922446609">
+        <Hierarchy dwd:design-time-name="fed73319-1b13-402d-9232-281f6b5e2755">
           <HierarchyID>Jerarquía</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="d1fa939d-d061-4473-8a9c-284ea028d8bb">
+    <Dimension dwd:design-time-name="8419e975-1998-4731-8bd1-c592c9d77f2f">
       <ID>2020 GT Region Mobility Report 1</ID>
       <Name>2020 GT Region Mobility Report 1</Name>
       <DimensionID>2020 GT Region Mobility Report 1</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="3b2283e5-2669-4c99-9e17-9a2f17553abf">
+        <Attribute dwd:design-time-name="7874ee8b-4d9f-43b7-9eb1-570e8ec91532">
           <AttributeID>Country Region</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="64896769-30f7-483a-a416-70bc966b3b70">
+        <Attribute dwd:design-time-name="8fc7489f-7f67-4c3a-98bc-56262ec67bb9">
           <AttributeID>Sub Region 1</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="8498eb06-a5f7-4226-be40-9eb0c3ec56ba">
-          <AttributeID>Sub Region 2</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="32105be1-d34e-4960-891a-91f8a8f83bd5">
+        <Attribute dwd:design-time-name="c106d883-34da-45b8-bacb-d4d19406cba0">
           <AttributeID>Date</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ed1167da-a10a-4211-802d-90ad18ee1983">
+        <Attribute dwd:design-time-name="026d2b32-5176-43a9-99ce-1a42e5e288bc">
           <AttributeID>Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7a4a5329-95f7-4b7f-bca9-fee7a6aea3d3">
+        <Attribute dwd:design-time-name="28c5aaec-4239-452a-a823-611756a28a6a">
           <AttributeID>Country Region Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7a935820-b23b-42d4-9000-7d6e2a3f5bbc">
+          <AttributeID>Sub Region 2</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="ed3b0fbb-387f-4243-b1ad-36ff7e1b6e7a">
+        <Hierarchy dwd:design-time-name="ae5c4410-b7a5-4837-a475-fcec3fec3c76">
           <HierarchyID>Jerarquía 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="a71de1b4-ed35-426f-b8ae-9e675cc8190e">
+    <MeasureGroup dwd:design-time-name="47e08bf3-25cb-4641-bea1-cfab14403d7c">
       <ID>Dim Tiempo</ID>
       <Name>Dim Tiempo</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="78b410d7-f593-4bd0-bbc0-4b9c6dbbee67">
+        <Measure dwd:design-time-name="c63141b8-48ef-4d7a-8a65-e6cf7c980a1e">
           <ID>Recuento PK Fecha</ID>
           <Name>Recuento PK Fecha</Name>
           <AggregateFunction>Count</AggregateFunction>
           <DataType>Integer</DataType>
-          <Source dwd:design-time-name="eae91050-5d89-4fbe-86f3-81241e46c243">
+          <Source dwd:design-time-name="8a52209a-90e8-4bad-a59b-8bb6e22782f6">
             <DataType>Date</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="c1a366e1-437d-4a55-b445-45749b95aac9">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a077eeab-127b-48ca-9560-a1069cf9f0d2">
               <TableID>dbo_DimTiempo</TableID>
               <ColumnID>PK_Fecha</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="3e0fa628-e01d-434d-9e76-3ffa0e094442">
+        <Measure dwd:design-time-name="10f94305-fa33-4050-a10e-808f2b0df58e">
           <ID>Día Del Año</ID>
           <Name>Día Del Año</Name>
-          <Source dwd:design-time-name="f9ebe4b0-d4f8-4f93-9c78-74147fc372f5">
+          <Source dwd:design-time-name="8cd57709-1f62-44aa-8994-404bbcce2f62">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="4e985736-639f-44cd-906d-b87d5f3ca50d">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="817258e7-9f49-474c-b4c2-fcc58d33acef">
               <TableID>dbo_DimTiempo</TableID>
               <ColumnID>Día_Del_Año</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="143d711b-292d-48d6-8a9b-ce68e32a6c31">
+        <Measure dwd:design-time-name="568cb89e-c091-4bd5-8753-204bdbee14d9">
           <ID>Día Del Semestre</ID>
           <Name>Día Del Semestre</Name>
-          <Source dwd:design-time-name="eccc414d-6bc1-48f8-bed5-30d0363e860a">
+          <Source dwd:design-time-name="e6a48e4a-3dfb-4cf4-abb2-05c46fd25466">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="f92f8e4b-0a6a-4fda-ae90-87af602c70c9">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6f88df28-f8bd-4ed7-a9a0-f58d3238a7fa">
               <TableID>dbo_DimTiempo</TableID>
               <ColumnID>Día_Del_Semestre</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="c97b0872-8e2c-411f-b1c1-6de7bcb30aab">
+        <Measure dwd:design-time-name="370a2905-8786-4ad8-aa70-addba459d278">
           <ID>Día Del Mes</ID>
           <Name>Día Del Mes</Name>
-          <Source dwd:design-time-name="2851cac3-084e-4be5-87a0-b817a0fd0425">
+          <Source dwd:design-time-name="d62dc7b5-8d6c-470f-b7ee-efddf7e79bcf">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="1e984f0c-f5e6-4b67-a756-d41986d76835">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d8758985-f824-4ca7-a5f7-31fb0aee83cf">
               <TableID>dbo_DimTiempo</TableID>
               <ColumnID>Día_Del_Mes</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="0a94d590-3df9-43b4-b396-f6bb499bd534">
+        <Measure dwd:design-time-name="48bb97f7-773a-47bc-9c49-4d17c8ba8fda">
           <ID>Mes Del Año</ID>
           <Name>Mes Del Año</Name>
-          <Source dwd:design-time-name="2f1e8024-70b8-441d-9f57-df723c3e9900">
+          <Source dwd:design-time-name="7108ca4b-db9b-44c2-a7be-7511aa66183d">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="7a83e555-d429-4404-8959-9c056b7d6582">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="04aae3a1-7fda-4e4e-9c0d-a89b30443bf4">
               <TableID>dbo_DimTiempo</TableID>
               <ColumnID>Mes_Del_Año</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="ebb0ef26-80c4-4322-bfad-913112d7f5d2">
+        <Measure dwd:design-time-name="012dd661-7ab5-4afa-8e73-335d92bd0de2">
           <ID>Mes Del Semestre</ID>
           <Name>Mes Del Semestre</Name>
-          <Source dwd:design-time-name="35b854be-7a43-4d8d-8125-2e1f8a1e68b3">
+          <Source dwd:design-time-name="59b78bab-84af-4fc9-8c45-28a8bb1e1daa">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="a0af3245-2797-47c0-8f9a-d260de6920c9">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b53186ae-9d9b-48fc-80ac-0e4a8451d03e">
               <TableID>dbo_DimTiempo</TableID>
               <ColumnID>Mes_Del_Semestre</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="335dc47f-853a-4949-a0d1-cee0158811b5">
+        <Measure dwd:design-time-name="0e7e2351-35c2-4620-85ff-12f73c3344cd">
           <ID>Semestre Del Año</ID>
           <Name>Semestre Del Año</Name>
-          <Source dwd:design-time-name="92ab9282-5a28-44f4-8b90-59856021d6cc">
+          <Source dwd:design-time-name="ceab8893-f9f6-4513-9db8-0cc3a44561b8">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="7dedbcd9-6f2d-4dc1-a20a-4bfecdf27441">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="dad4b404-99a5-4152-9793-9be7e241ae34">
               <TableID>dbo_DimTiempo</TableID>
               <ColumnID>Semestre_Del_Año</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="1f2f20a9-377c-4210-bb8d-166b73f31e8b">
+        <Measure dwd:design-time-name="1cf11ed0-b8b9-4114-bfdd-4c522457507c">
           <ID>Recuento Dim Tiempo</ID>
           <Name>Recuento Dim Tiempo</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="9b4845fa-3fc9-4328-888a-8bd7d0eaa351">
+          <Source dwd:design-time-name="142d1fbc-b485-42ce-b418-64281eb0536f">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="42ab3565-3baa-48b9-a6a0-2f65eceda8dc">
+            <Source xsi:type="RowBinding" dwd:design-time-name="7b4e760a-a8eb-4fc7-9a2a-8aef4154df6e">
               <TableID>dbo_DimTiempo</TableID>
             </Source>
           </Source>
@@ -239,15 +277,15 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="40a11608-bd70-4d79-8232-ab59b85f1632">
-          <CubeDimensionID>Dim Tiempo 1</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="40d72e98-fc0c-4141-8a16-cbc935ae9b54">
+          <CubeDimensionID>Dim Tiempo</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="e86da89a-3cf1-42dc-b44f-5d5b01ebd3c1">
+            <Attribute dwd:design-time-name="101509cd-8450-446e-846a-2296a66144f7">
               <AttributeID>PK Fecha</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="bcce612a-fb78-47f6-8ae9-85df68a078cf">
+                <KeyColumn dwd:design-time-name="b22ac23f-e236-4aa7-8170-00c7b1415d53">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eff4cc29-802f-466b-b53b-91980e02983d">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="083ce982-8252-42c8-99ad-d6fc9f97928c">
                     <TableID>dbo_DimTiempo</TableID>
                     <ColumnID>PK_Fecha</ColumnID>
                   </Source>
@@ -260,88 +298,94 @@
       </Dimensions>
       <Partitions />
     </MeasureGroup>
-    <MeasureGroup dwd:design-time-name="bc7bd99a-6c29-4c1f-9b5f-1924d936c3d5">
+    <MeasureGroup dwd:design-time-name="432dea48-5d5a-4d9c-9853-1544f1b08d8d">
       <ID>2020 GT Region Mobility Report</ID>
       <Name>2020 GT Region Mobility Report</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="9bc51aba-8feb-40ff-8015-a1f60d38b1ae">
+        <Measure dwd:design-time-name="7d7964ad-97ee-46bc-82b6-2a295af68587">
           <ID>Retail And Recreation Percent Change From Baseline</ID>
           <Name>Retail And Recreation Percent Change From Baseline</Name>
-          <Source dwd:design-time-name="b3e28cc2-636f-4176-9db5-6d333fc44361">
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="87d6cf6e-049b-419c-975c-6b6f5599dc31">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="99214b08-462a-409c-ab50-099af6f8293c">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bcc120b2-8807-4e3b-b1cd-b8e2fc3e539f">
               <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
               <ColumnID>retail_and_recreation_percent_change_from_baseline</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="45875665-cec3-4c2e-ae55-32ef35869bb0">
+        <Measure dwd:design-time-name="dc95c4a0-a675-42f5-8477-ce831623c785">
           <ID>Grocery And Pharmacy Percent Change From Baseline</ID>
           <Name>Grocery And Pharmacy Percent Change From Baseline</Name>
-          <Source dwd:design-time-name="4af31169-b49c-4585-adac-c687d95e60c2">
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="9699787a-6cb3-4ebc-9bc6-f54b786e1416">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="e117a12c-8e8c-47fd-b4c6-8cb8dee00f28">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1d2e3553-fdf1-44f9-8adb-2826de821a72">
               <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
               <ColumnID>grocery_and_pharmacy_percent_change_from_baseline</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="156cf80c-8ab0-4f2a-aac3-4b7c124072d3">
+        <Measure dwd:design-time-name="139e8a9e-360a-4cb3-818d-5b0e7dd79750">
           <ID>Parks Percent Change From Baseline</ID>
           <Name>Parks Percent Change From Baseline</Name>
-          <Source dwd:design-time-name="a5e04167-854f-4f29-a0c3-c03253614157">
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="e7cf8558-ebb7-40aa-9539-d5149d053ee6">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="90350a42-952e-4378-8b52-876a38bd51b5">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8860317d-81e1-4c72-a4d6-b7942dc82448">
               <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
               <ColumnID>parks_percent_change_from_baseline</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="6d31e746-e76e-4787-a71e-c0f4a04c5647">
+        <Measure dwd:design-time-name="3edbd2eb-0a7e-4e49-b1cd-8b36440df678">
           <ID>Transit Stations Percent Change From Baseline</ID>
           <Name>Transit Stations Percent Change From Baseline</Name>
-          <Source dwd:design-time-name="75ff9491-2036-44f5-8618-7f1636bab947">
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="9a49f7a3-687e-463a-87ee-c8cc4a4f9746">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="d24be877-c7a0-493b-aa8c-ad00a3e63c15">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="464c525e-412b-4fb8-b747-1d0a6a7041cf">
               <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
               <ColumnID>transit_stations_percent_change_from_baseline</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="ba4a4352-c4d2-4577-811d-fded40a51f54">
+        <Measure dwd:design-time-name="58edc339-6a7d-4993-b4d7-7676ce5f9c1d">
           <ID>Workplaces Percent Change From Baseline</ID>
           <Name>Workplaces Percent Change From Baseline</Name>
-          <Source dwd:design-time-name="04447e5f-13ee-446a-8eff-cfb1334cbdc4">
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="7064c157-b4ad-41ad-b410-7ef580d773ab">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="cf0d3f69-293e-4868-b426-5b8f97835ee7">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="add345bc-06a0-43dd-8141-8b0847505618">
               <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
               <ColumnID>workplaces_percent_change_from_baseline</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="3d72ec22-de31-44f5-bdea-066f68ed32e8">
+        <Measure dwd:design-time-name="274391a3-f1e5-44d4-b2b8-480858bc8028">
           <ID>Residential Percent Change From Baseline</ID>
           <Name>Residential Percent Change From Baseline</Name>
-          <Source dwd:design-time-name="a52d5fe0-bcbd-40d7-a78c-3737d52e4af9">
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="1568ecc2-daac-4ad5-ab43-1aadd09d5ff6">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="822385b4-41fc-4a44-87a0-805042e7639c">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="929e0f1c-3438-4210-817c-d05f23782218">
               <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
               <ColumnID>residential_percent_change_from_baseline</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="2002e622-4ffa-4fcc-995a-cc1b462d42f3">
+        <Measure dwd:design-time-name="096feaf5-6ea5-4392-93dd-b8844a69259c">
           <ID>Recuento 2020 GT Region Mobility Report</ID>
           <Name>Recuento 2020 GT Region Mobility Report</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="6ad5a467-8874-40cf-a128-57a919c09119">
+          <Source dwd:design-time-name="7db286bd-11e1-4158-a963-3aef12edab3d">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="acbfe61a-af36-476d-aae1-c8160301136a">
+            <Source xsi:type="RowBinding" dwd:design-time-name="927cb5eb-159f-40b1-80bc-06d1d8103a3b">
               <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
             </Source>
           </Source>
@@ -350,17 +394,17 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4dd4be4d-b7e7-42b0-bc58-c444b305d4c5">
-          <CubeDimensionID>Dim Tiempo 1</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c965fab6-04da-4849-9120-ebccaf57a231">
+          <CubeDimensionID>2020 GT Region Mobility Report 1</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="96eb0e1c-3bcb-403e-ad8f-3bc561c742d7">
-              <AttributeID>PK Fecha</AttributeID>
+            <Attribute dwd:design-time-name="8e8fe022-3c0f-424a-9a6a-848d2026f2f4">
+              <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="3b062a97-cbc6-4d96-8954-78debdc7a330">
-                  <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8ab4daa0-e05c-4dd5-bd1f-3ec18fcc62c1">
+                <KeyColumn dwd:design-time-name="41959d25-cf2c-4a84-8ba1-a95963930794">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="091188ca-f66d-422d-8e89-9a46b2c14cd5">
                     <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
-                    <ColumnID>date</ColumnID>
+                    <ColumnID>Id</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
@@ -368,17 +412,17 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4d1f0df5-75b2-43f8-8c3f-3290c385cc61">
-          <CubeDimensionID>2020 GT Region Mobility Report 1</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="be4766cc-e6af-4e9b-bc69-c1817e40dd38">
+          <CubeDimensionID>Dim Tiempo</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="6352a4ab-3da2-4897-9112-bfa2b5374a95">
-              <AttributeID>Id</AttributeID>
+            <Attribute dwd:design-time-name="c986444d-c751-4194-a31e-8149777cb258">
+              <AttributeID>PK Fecha</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="7f0099ab-e3b7-4a12-9859-007cc3c2d64c">
-                  <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2cb8d30f-f196-40be-b436-64e6da9cedde">
+                <KeyColumn dwd:design-time-name="5063539b-361f-4336-9e63-a02b426aa442">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3c69049a-59d2-44fd-8a09-5759ff1af2df">
                     <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
-                    <ColumnID>Id</ColumnID>
+                    <ColumnID>date</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
@@ -390,15 +434,15 @@
       <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="27ec021f-b30c-458b-a384-ffba640b4e66">
+  <Source dwd:design-time-name="c845ee60-d79d-413f-94e1-6f3039fdaef5">
     <DataSourceViewID>DESAFIO DMD 1</DataSourceViewID>
   </Source>
   <MdxScripts>
-    <MdxScript dwd:design-time-name="7fcc2019-eaf6-4571-9e71-6639ac5049fe">
+    <MdxScript dwd:design-time-name="8d5baf8a-36db-4163-abb5-90d692f70a74">
       <ID>MdxScript</ID>
       <Name>MdxScript</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
       <Commands>
         <Command>
           <Text>/*
@@ -406,7 +450,256 @@ El comando CALCULATE controla la agregación de celdas hoja en el cubo.
 Si se elimina o modifica el comando CALCULATE, se ven afectados los datos del cubo.
 Solo debe editar este comando si especifica manualmente cómo se agrega el cubo.
 */
-CALCULATE; </Text>
+CALCULATE; 
+/*
+
+  Begin Time Intelligence script for the [Dim Tiempo].[Jerarquía] hierarchy.
+
+*/
+
+Create Member 
+  CurrentCube.[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Year Over Year Growth %] 
+  As "NA" ;
+  
+Create Member 
+  CurrentCube.[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Semester Over Semester Growth %] 
+  As "NA" ;
+  
+Create Member 
+  CurrentCube.[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Month Over Month Growth %] 
+  As "NA" ;
+  
+Create Member 
+  CurrentCube.[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Day Over Day Growth %] 
+  As "NA" ;
+  
+
+Scope(
+       {
+         [Measures].[Mes Del Año],
+         [Measures].[Semestre Del Año],
+         [Measures].[Retail And Recreation Percent Change From Baseline],
+         [Measures].[Grocery And Pharmacy Percent Change From Baseline],
+         [Measures].[Parks Percent Change From Baseline],
+         [Measures].[Transit Stations Percent Change From Baseline],
+         [Measures].[Workplaces Percent Change From Baseline],
+         [Measures].[Residential Percent Change From Baseline]
+       }
+) ;
+
+/*Year Over Year Growth %*/  
+  ( 
+	[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Year Over Year Growth %],
+    [Dim Tiempo].[Año].[Año].Members ( 1 ) : Null,
+	[Dim Tiempo].[PK Fecha].Members 
+  ) 
+  
+  =      
+
+  ( 
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo], 
+      [Dim Tiempo].[Jerarquía].CurrentMember
+    ) 
+    
+    -
+    
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+      ParallelPeriod(
+                      [Dim Tiempo].[Jerarquía].[Año],
+                      1,
+                      [Dim Tiempo].[Jerarquía].CurrentMember
+      )
+    )
+  )
+  
+  /
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+    ParallelPeriod(
+                    [Dim Tiempo].[Jerarquía].[Año],
+                    1,
+                    [Dim Tiempo].[Jerarquía].CurrentMember
+    )
+  ) ;
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Year Over Year Growth %],
+    [Dim Tiempo].[Año].[Año].Members ( 0 ),
+	[Dim Tiempo].[PK Fecha].Members 
+  ) = Null ; 
+  
+  Format_String( 
+                 ( 
+				   [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Year Over Year Growth %],
+				   [Dim Tiempo].[PK Fecha].Members
+				 )
+  ) = "Percent" ;
+
+  
+/*Semester Over Semester Growth %*/  
+  ( 
+	[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Semester Over Semester Growth %],
+    [Dim Tiempo].[Semestre].[Semestre].Members ( 1 ) : Null,
+	[Dim Tiempo].[PK Fecha].Members 
+  ) 
+  
+  =      
+
+  (
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo], 
+      [Dim Tiempo].[Jerarquía].CurrentMember
+    ) 
+    
+    -
+    
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+      ParallelPeriod(
+                      [Dim Tiempo].[Jerarquía].[Semestre],
+                      1,
+                      [Dim Tiempo].[Jerarquía].CurrentMember
+      )
+    )
+  )
+  
+  /
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+    ParallelPeriod(
+                    [Dim Tiempo].[Jerarquía].[Semestre],
+                    1,
+                    [Dim Tiempo].[Jerarquía].CurrentMember
+    )
+  ) ;
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Semester Over Semester Growth %],
+    [Dim Tiempo].[Semestre].[Semestre].Members ( 0 ),
+	[Dim Tiempo].[PK Fecha].Members 
+  ) = Null ; 
+  
+  Format_String( 
+                 ( 
+				   [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Semester Over Semester Growth %],
+				   [Dim Tiempo].[PK Fecha].Members
+				 )
+  ) = "Percent" ;
+
+  
+/*Month Over Month Growth %*/  
+  ( 
+	[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Month Over Month Growth %],
+    [Dim Tiempo].[Mes].[Mes].Members ( 1 ) : Null,
+	[Dim Tiempo].[PK Fecha].Members 
+  ) 
+  
+  =      
+
+  (
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo], 
+      [Dim Tiempo].[Jerarquía].CurrentMember
+    ) 
+    
+    -
+    
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+      ParallelPeriod(
+                      [Dim Tiempo].[Jerarquía].[Mes],
+                      1,
+                      [Dim Tiempo].[Jerarquía].CurrentMember
+      )
+    )
+  )
+  
+  /
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+    ParallelPeriod(
+                    [Dim Tiempo].[Jerarquía].[Mes],
+                    1,
+                    [Dim Tiempo].[Jerarquía].CurrentMember
+    )
+  ) ;
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Month Over Month Growth %],
+    [Dim Tiempo].[Mes].[Mes].Members ( 0 ),
+	[Dim Tiempo].[PK Fecha].Members 
+  ) = Null ; 
+  
+  Format_String( 
+                 ( 
+				   [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Month Over Month Growth %],
+				   [Dim Tiempo].[PK Fecha].Members
+				 )
+  ) = "Percent" ;
+
+  
+/*Day Over Day Growth %*/  
+  ( 
+	[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Day Over Day Growth %],
+    [Dim Tiempo].[PK Fecha].[PK Fecha].Members ( 1 ) : Null
+  ) 
+  
+  =      
+
+  (
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+      [Dim Tiempo].[Jerarquía].CurrentMember
+    ) 
+    
+    -
+    
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+      ParallelPeriod(
+                      [Dim Tiempo].[Jerarquía].[PK Fecha],
+                      1,
+                      [Dim Tiempo].[Jerarquía].CurrentMember
+      )
+    )
+  )
+  
+  /
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+    ParallelPeriod(
+                    [Dim Tiempo].[Jerarquía].[PK Fecha],
+                    1,
+                    [Dim Tiempo].[Jerarquía].CurrentMember
+    )
+  ) ;
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Day Over Day Growth %],
+    [Dim Tiempo].[PK Fecha].[PK Fecha].Members ( 0 ) 
+  ) = Null ;
+  
+  Format_String( 
+                 ( 
+				   [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Day Over Day Growth %],
+				   [Dim Tiempo].[PK Fecha].Members
+				 )
+  ) = "Percent" ;
+
+  
+End Scope ;
+/*
+
+  End Time Intelligence script for the [Dim Tiempo].[Jerarquía] hierarchy.
+
+*/
+  </Text>
         </Command>
       </Commands>
     </MdxScript>

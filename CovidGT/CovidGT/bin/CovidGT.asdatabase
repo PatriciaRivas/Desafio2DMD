@@ -103,7 +103,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-986" scrolltop="-1879" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6800" y="9260" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-986" scrolltop="-2130" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6800" y="7938" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -114,7 +114,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTiempo" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4789" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTiempo" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4789" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000b512000088130000" />
                 </control>
@@ -146,7 +146,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-1879</Value>
+          <Value>-2130</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -164,15 +164,33 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
           <Value>
             <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
-              <Shapes NodeWidth="81">
+              <Shapes NodeWidth="140">
                 <Shape Id="PK Fecha" Expanded="true">
                   <Attributes>
                     <Attribute Id="PK Fecha" />
-                    <Attribute Id="Año Nombre" />
-                    <Attribute Id="Mes Nombre" />
-                    <Attribute Id="Semestre Nombre" />
                   </Attributes>
                   <Position x="20" y="20" />
+                </Shape>
+                <Shape Id="Mes" Expanded="true">
+                  <Attributes>
+                    <Attribute Id="Mes" />
+                    <Attribute Id="Mes Nombre" />
+                  </Attributes>
+                  <Position x="200" y="20" />
+                </Shape>
+                <Shape Id="Semestre" Expanded="true">
+                  <Attributes>
+                    <Attribute Id="Semestre" />
+                    <Attribute Id="Semestre Nombre" />
+                  </Attributes>
+                  <Position x="380" y="20" />
+                </Shape>
+                <Shape Id="Año" Expanded="true">
+                  <Attributes>
+                    <Attribute Id="Año" />
+                    <Attribute Id="Año Nombre" />
+                  </Attributes>
+                  <Position x="560" y="20" />
                 </Shape>
               </Shapes>
             </DiagramLayout>
@@ -184,6 +202,7 @@
       <Source xsi:type="DataSourceViewBinding">
         <DataSourceViewID>DESAFIO DMD 1</DataSourceViewID>
       </Source>
+      <Type>Time</Type>
       <ErrorConfiguration>
         <KeyNotFound>ReportAndStop</KeyNotFound>
         <KeyDuplicate>ReportAndStop</KeyDuplicate>
@@ -206,16 +225,21 @@
           </KeyColumns>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Año Nombre</AttributeID>
-              <Name>Año Nombre</Name>
+              <AttributeID>Mes</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Mes</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Semestre Nombre</AttributeID>
-              <Name>Semestre Nombre</Name>
+              <AttributeID>Jerarquía Dim Tiempo Cálculos</AttributeID>
+              <Name>Jerarquía Dim Tiempo Cálculos</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Mes Nombre</AttributeID>
-              <Name>Mes Nombre</Name>
+              <AttributeID>Jerarquía Dim Tiempo Cálculos 1</AttributeID>
+              <Name>Jerarquía Dim Tiempo Cálculos 1</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Jerarquía Dim Tiempo Cálculos 2</AttributeID>
+              <Name>Jerarquía Dim Tiempo Cálculos 2</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -270,12 +294,160 @@
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
+        <Attribute>
+          <ID>Año</ID>
+          <Name>Año</Name>
+          <Type>Years</Type>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Date</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTiempo</TableID>
+                <ColumnID>Año</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Año Nombre</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Año Nombre</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Mes</ID>
+          <Name>Mes</Name>
+          <Type>Months</Type>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Date</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTiempo</TableID>
+                <ColumnID>Mes</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Semestre</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Semestre</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Mes Nombre</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Mes Nombre</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Semestre</ID>
+          <Name>Semestre</Name>
+          <Type>HalfYears</Type>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Date</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTiempo</TableID>
+                <ColumnID>Semestre</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Año</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Año</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Semestre Nombre</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Semestre Nombre</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Jerarquía Dim Tiempo Cálculos</ID>
+          <Name>Jerarquía Dim Tiempo Cálculos</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>19</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTiempo</TableID>
+                <ColumnID>Jerarquía_x0020_Dim_x0020_Tiempo_x0020_Cálculos</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <DefaultMember>[Jerarquía Dim Tiempo Cálculos].[Actual Dim Tiempo]</DefaultMember>
+          <IsAggregatable>false</IsAggregatable>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Jerarquía Dim Tiempo Cálculos 1</ID>
+          <Name>Jerarquía Dim Tiempo Cálculos 1</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>19</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTiempo</TableID>
+                <ColumnID>Jerarquía_x0020_Dim_x0020_Tiempo_x0020_Cálculos_x0020_1</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <DefaultMember>[Jerarquía Dim Tiempo Cálculos 1].[Actual Dim Tiempo]</DefaultMember>
+          <IsAggregatable>false</IsAggregatable>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Jerarquía Dim Tiempo Cálculos 2</ID>
+          <Name>Jerarquía Dim Tiempo Cálculos 2</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>19</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTiempo</TableID>
+                <ColumnID>Jerarquía_x0020_Dim_x0020_Tiempo_x0020_Cálculos_x0020_2</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <DefaultMember>[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo]</DefaultMember>
+          <IsAggregatable>false</IsAggregatable>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy>
           <ID>Jerarquía</ID>
           <Name>Jerarquía</Name>
           <Levels>
+            <Level>
+              <ID>Año</ID>
+              <Name>Año</Name>
+              <SourceAttributeID>Año</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Semestre</ID>
+              <Name>Semestre</Name>
+              <SourceAttributeID>Semestre</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Mes</ID>
+              <Name>Mes</Name>
+              <SourceAttributeID>Mes</SourceAttributeID>
+            </Level>
             <Level>
               <ID>PK Fecha</ID>
               <Name>PK Fecha</Name>
@@ -296,7 +468,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1" scrolltop="-1293" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="82" x="6800" y="9260" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1" scrolltop="-1293" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="82" x="6800" y="7938" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -361,33 +533,13 @@
                 <Shape Id="Id" Expanded="true">
                   <Attributes>
                     <Attribute Id="Id" />
+                    <Attribute Id="Country Region" />
+                    <Attribute Id="Country Region Code" />
+                    <Attribute Id="Date" />
+                    <Attribute Id="Sub Region 1" />
+                    <Attribute Id="Sub Region 2" />
                   </Attributes>
                   <Position x="20" y="20" />
-                </Shape>
-                <Shape Id="Country Region Code" Expanded="false">
-                  <Attributes>
-                    <Attribute Id="Country Region Code" />
-                  </Attributes>
-                  <Position x="211" y="20" />
-                </Shape>
-                <Shape Id="Country Region" Expanded="true">
-                  <Attributes>
-                    <Attribute Id="Country Region" />
-                  </Attributes>
-                  <Position x="402" y="20" />
-                </Shape>
-                <Shape Id="Sub Region 1" Expanded="true">
-                  <Attributes>
-                    <Attribute Id="Sub Region 1" />
-                  </Attributes>
-                  <Position x="593" y="20" />
-                </Shape>
-                <Shape Id="Sub Region 2" Expanded="false">
-                  <Attributes>
-                    <Attribute Id="Sub Region 2" />
-                    <Attribute Id="Date" />
-                  </Attributes>
-                  <Position x="785" y="20" />
                 </Shape>
               </Shapes>
             </DiagramLayout>
@@ -419,12 +571,6 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Sub Region 1</AttributeID>
-              <Name>Sub Region 1</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -441,34 +587,6 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Sub Region 2</AttributeID>
-              <Name>Sub Region 2</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Sub Region 2</ID>
-          <Name>Sub Region 2</Name>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>WChar</DataType>
-              <DataSize>100</DataSize>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
-                <ColumnID>sub_region_2</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Date</AttributeID>
-              <Name>Date</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -505,6 +623,22 @@
               <AttributeID>Country Region Code</AttributeID>
               <Name>Country Region Code</Name>
             </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Country Region</AttributeID>
+              <Name>Country Region</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Sub Region 1</AttributeID>
+              <Name>Sub Region 1</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Sub Region 2</AttributeID>
+              <Name>Sub Region 2</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Date</AttributeID>
+              <Name>Date</Name>
+            </AttributeRelationship>
           </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -522,12 +656,22 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Country Region</AttributeID>
-              <Name>Country Region</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Sub Region 2</ID>
+          <Name>Sub Region 2</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>100</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+                <ColumnID>sub_region_2</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -552,14 +696,14 @@
     <Cube>
       <ID>DESAFIO DMD</ID>
       <Name>DESAFIO DMD</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
       <Annotations>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6383" scrolltop="-2130" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17595" y="9260" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6383" scrolltop="-6482" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14711" y="7938" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -570,7 +714,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCovid" left="7809" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="8255" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCovid" left="2517" top="-1376" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="8255" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e00003f20000088130000" />
                 </control>
@@ -581,7 +725,7 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTiempo" left="20" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4789" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTiempo" left="-3631" top="-1482" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="4789" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000b512000088130000" />
                 </control>
@@ -591,6 +735,26 @@
                   </ddsxmlobj>
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="858" top="-1581" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="1959" height="805" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[2020_GT_Region_Mobility_Report-DimTiempo]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="19" destattachpoint="30" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="1158" y="-1182" />
+                  <point x="1837" y="-1182" />
+                  <point x="1837" y="-1076" />
+                  <point x="2517" y="-1076" />
+                </connector>
               </ddscontrol>
             </dds>
           </Value>
@@ -613,27 +777,27 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-2130</Value>
+          <Value>-6482</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>20</Value>
+          <Value>-3631</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-          <Value>0</Value>
+          <Value>-1482</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
           <Value>100</Value>
         </Annotation>
       </Annotations>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Dimensions>
         <Dimension>
-          <ID>Dim Tiempo 1</ID>
-          <Name>Dim Tiempo 1</Name>
+          <ID>Dim Tiempo</ID>
+          <Name>Dim Tiempo</Name>
           <DimensionID>Dim Tiempo 1</DimensionID>
           <Attributes>
             <Attribute>
@@ -647,6 +811,24 @@
             </Attribute>
             <Attribute>
               <AttributeID>Mes Nombre</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Año</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Mes</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Semestre</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Jerarquía Dim Tiempo Cálculos</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Jerarquía Dim Tiempo Cálculos 1</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Jerarquía Dim Tiempo Cálculos 2</AttributeID>
             </Attribute>
           </Attributes>
           <Hierarchies>
@@ -667,9 +849,6 @@
               <AttributeID>Sub Region 1</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Sub Region 2</AttributeID>
-            </Attribute>
-            <Attribute>
               <AttributeID>Date</AttributeID>
             </Attribute>
             <Attribute>
@@ -677,6 +856,9 @@
             </Attribute>
             <Attribute>
               <AttributeID>Country Region Code</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Sub Region 2</AttributeID>
             </Attribute>
           </Attributes>
           <Hierarchies>
@@ -690,9 +872,9 @@
         <MeasureGroup>
           <ID>Dim Tiempo</ID>
           <Name>Dim Tiempo</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Measures>
             <Measure>
@@ -791,7 +973,7 @@
           <ProcessingMode>Regular</ProcessingMode>
           <Dimensions>
             <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Dim Tiempo 1</CubeDimensionID>
+              <CubeDimensionID>Dim Tiempo</CubeDimensionID>
               <Attributes>
                 <Attribute>
                   <AttributeID>PK Fecha</AttributeID>
@@ -813,9 +995,9 @@
             <Partition>
               <ID>Dim Tiempo</ID>
               <Name>Dim Tiempo</Name>
-              <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-              <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-              <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+              <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+              <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+              <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
               <State>Unprocessed</State>
               <Source xsi:type="DsvTableBinding">
                 <DataSourceViewID>DESAFIO DMD 1</DataSourceViewID>
@@ -830,14 +1012,15 @@
         <MeasureGroup>
           <ID>2020 GT Region Mobility Report</ID>
           <Name>2020 GT Region Mobility Report</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Measures>
             <Measure>
               <ID>Retail And Recreation Percent Change From Baseline</ID>
               <Name>Retail And Recreation Percent Change From Baseline</Name>
+              <AggregateFunction>AverageOfChildren</AggregateFunction>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -849,6 +1032,7 @@
             <Measure>
               <ID>Grocery And Pharmacy Percent Change From Baseline</ID>
               <Name>Grocery And Pharmacy Percent Change From Baseline</Name>
+              <AggregateFunction>AverageOfChildren</AggregateFunction>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -860,6 +1044,7 @@
             <Measure>
               <ID>Parks Percent Change From Baseline</ID>
               <Name>Parks Percent Change From Baseline</Name>
+              <AggregateFunction>AverageOfChildren</AggregateFunction>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -871,6 +1056,7 @@
             <Measure>
               <ID>Transit Stations Percent Change From Baseline</ID>
               <Name>Transit Stations Percent Change From Baseline</Name>
+              <AggregateFunction>AverageOfChildren</AggregateFunction>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -882,6 +1068,7 @@
             <Measure>
               <ID>Workplaces Percent Change From Baseline</ID>
               <Name>Workplaces Percent Change From Baseline</Name>
+              <AggregateFunction>AverageOfChildren</AggregateFunction>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -893,6 +1080,7 @@
             <Measure>
               <ID>Residential Percent Change From Baseline</ID>
               <Name>Residential Percent Change From Baseline</Name>
+              <AggregateFunction>AverageOfChildren</AggregateFunction>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -918,24 +1106,6 @@
           <ProcessingMode>Regular</ProcessingMode>
           <Dimensions>
             <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Dim Tiempo 1</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>PK Fecha</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Date</DataType>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
-                        <ColumnID>date</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
               <CubeDimensionID>2020 GT Region Mobility Report 1</CubeDimensionID>
               <Attributes>
                 <Attribute>
@@ -953,14 +1123,32 @@
                 </Attribute>
               </Attributes>
             </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Tiempo</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PK Fecha</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Date</DataType>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_2020_GT_Region_Mobility_Report</TableID>
+                        <ColumnID>date</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
           </Dimensions>
           <Partitions>
             <Partition>
               <ID>2020 GT Region Mobility Report</ID>
               <Name>2020 GT Region Mobility Report</Name>
-              <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-              <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-              <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+              <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+              <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+              <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
               <State>Unprocessed</State>
               <Source xsi:type="DsvTableBinding">
                 <DataSourceViewID>DESAFIO DMD 1</DataSourceViewID>
@@ -980,8 +1168,8 @@
         <MdxScript>
           <ID>MdxScript</ID>
           <Name>MdxScript</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
           <Commands>
             <Command>
               <Text>/*
@@ -989,7 +1177,256 @@ El comando CALCULATE controla la agregación de celdas hoja en el cubo.
 Si se elimina o modifica el comando CALCULATE, se ven afectados los datos del cubo.
 Solo debe editar este comando si especifica manualmente cómo se agrega el cubo.
 */
-CALCULATE; </Text>
+CALCULATE; 
+/*
+
+  Begin Time Intelligence script for the [Dim Tiempo].[Jerarquía] hierarchy.
+
+*/
+
+Create Member 
+  CurrentCube.[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Year Over Year Growth %] 
+  As "NA" ;
+  
+Create Member 
+  CurrentCube.[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Semester Over Semester Growth %] 
+  As "NA" ;
+  
+Create Member 
+  CurrentCube.[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Month Over Month Growth %] 
+  As "NA" ;
+  
+Create Member 
+  CurrentCube.[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Day Over Day Growth %] 
+  As "NA" ;
+  
+
+Scope(
+       {
+         [Measures].[Mes Del Año],
+         [Measures].[Semestre Del Año],
+         [Measures].[Retail And Recreation Percent Change From Baseline],
+         [Measures].[Grocery And Pharmacy Percent Change From Baseline],
+         [Measures].[Parks Percent Change From Baseline],
+         [Measures].[Transit Stations Percent Change From Baseline],
+         [Measures].[Workplaces Percent Change From Baseline],
+         [Measures].[Residential Percent Change From Baseline]
+       }
+) ;
+
+/*Year Over Year Growth %*/  
+  ( 
+	[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Year Over Year Growth %],
+    [Dim Tiempo].[Año].[Año].Members ( 1 ) : Null,
+	[Dim Tiempo].[PK Fecha].Members 
+  ) 
+  
+  =      
+
+  ( 
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo], 
+      [Dim Tiempo].[Jerarquía].CurrentMember
+    ) 
+    
+    -
+    
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+      ParallelPeriod(
+                      [Dim Tiempo].[Jerarquía].[Año],
+                      1,
+                      [Dim Tiempo].[Jerarquía].CurrentMember
+      )
+    )
+  )
+  
+  /
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+    ParallelPeriod(
+                    [Dim Tiempo].[Jerarquía].[Año],
+                    1,
+                    [Dim Tiempo].[Jerarquía].CurrentMember
+    )
+  ) ;
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Year Over Year Growth %],
+    [Dim Tiempo].[Año].[Año].Members ( 0 ),
+	[Dim Tiempo].[PK Fecha].Members 
+  ) = Null ; 
+  
+  Format_String( 
+                 ( 
+				   [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Year Over Year Growth %],
+				   [Dim Tiempo].[PK Fecha].Members
+				 )
+  ) = "Percent" ;
+
+  
+/*Semester Over Semester Growth %*/  
+  ( 
+	[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Semester Over Semester Growth %],
+    [Dim Tiempo].[Semestre].[Semestre].Members ( 1 ) : Null,
+	[Dim Tiempo].[PK Fecha].Members 
+  ) 
+  
+  =      
+
+  (
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo], 
+      [Dim Tiempo].[Jerarquía].CurrentMember
+    ) 
+    
+    -
+    
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+      ParallelPeriod(
+                      [Dim Tiempo].[Jerarquía].[Semestre],
+                      1,
+                      [Dim Tiempo].[Jerarquía].CurrentMember
+      )
+    )
+  )
+  
+  /
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+    ParallelPeriod(
+                    [Dim Tiempo].[Jerarquía].[Semestre],
+                    1,
+                    [Dim Tiempo].[Jerarquía].CurrentMember
+    )
+  ) ;
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Semester Over Semester Growth %],
+    [Dim Tiempo].[Semestre].[Semestre].Members ( 0 ),
+	[Dim Tiempo].[PK Fecha].Members 
+  ) = Null ; 
+  
+  Format_String( 
+                 ( 
+				   [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Semester Over Semester Growth %],
+				   [Dim Tiempo].[PK Fecha].Members
+				 )
+  ) = "Percent" ;
+
+  
+/*Month Over Month Growth %*/  
+  ( 
+	[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Month Over Month Growth %],
+    [Dim Tiempo].[Mes].[Mes].Members ( 1 ) : Null,
+	[Dim Tiempo].[PK Fecha].Members 
+  ) 
+  
+  =      
+
+  (
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo], 
+      [Dim Tiempo].[Jerarquía].CurrentMember
+    ) 
+    
+    -
+    
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+      ParallelPeriod(
+                      [Dim Tiempo].[Jerarquía].[Mes],
+                      1,
+                      [Dim Tiempo].[Jerarquía].CurrentMember
+      )
+    )
+  )
+  
+  /
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+    ParallelPeriod(
+                    [Dim Tiempo].[Jerarquía].[Mes],
+                    1,
+                    [Dim Tiempo].[Jerarquía].CurrentMember
+    )
+  ) ;
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Month Over Month Growth %],
+    [Dim Tiempo].[Mes].[Mes].Members ( 0 ),
+	[Dim Tiempo].[PK Fecha].Members 
+  ) = Null ; 
+  
+  Format_String( 
+                 ( 
+				   [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Month Over Month Growth %],
+				   [Dim Tiempo].[PK Fecha].Members
+				 )
+  ) = "Percent" ;
+
+  
+/*Day Over Day Growth %*/  
+  ( 
+	[Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Day Over Day Growth %],
+    [Dim Tiempo].[PK Fecha].[PK Fecha].Members ( 1 ) : Null
+  ) 
+  
+  =      
+
+  (
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+      [Dim Tiempo].[Jerarquía].CurrentMember
+    ) 
+    
+    -
+    
+    ( 
+      [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+      ParallelPeriod(
+                      [Dim Tiempo].[Jerarquía].[PK Fecha],
+                      1,
+                      [Dim Tiempo].[Jerarquía].CurrentMember
+      )
+    )
+  )
+  
+  /
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Actual Dim Tiempo],
+    ParallelPeriod(
+                    [Dim Tiempo].[Jerarquía].[PK Fecha],
+                    1,
+                    [Dim Tiempo].[Jerarquía].CurrentMember
+    )
+  ) ;
+  
+  ( 
+    [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Day Over Day Growth %],
+    [Dim Tiempo].[PK Fecha].[PK Fecha].Members ( 0 ) 
+  ) = Null ;
+  
+  Format_String( 
+                 ( 
+				   [Dim Tiempo].[Jerarquía Dim Tiempo Cálculos 2].[Day Over Day Growth %],
+				   [Dim Tiempo].[PK Fecha].Members
+				 )
+  ) = "Percent" ;
+
+  
+End Scope ;
+/*
+
+  End Time Intelligence script for the [Dim Tiempo].[Jerarquía] hierarchy.
+
+*/
+  </Text>
             </Command>
           </Commands>
         </MdxScript>
@@ -1002,8 +1439,8 @@ CALCULATE; </Text>
       <Name>DESAFIO DMD</Name>
       <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
-      <ConnectionString>Provider=SQLNCLI11.1;Data Source=127.0.01;Password=;User ID=;Initial Catalog=DESAFIO_DMD</ConnectionString>
-      <ConnectionStringSecurity>PasswordRemoved</ConnectionStringSecurity>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=127.0.01;Integrated Security=SSPI;Initial Catalog=DESAFIO_DMD</ConnectionString>
+      <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
       <ImpersonationInfo>
         <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
         <Account>PatriciaPR</Account>
@@ -1046,7 +1483,7 @@ CALCULATE; </Text>
                 <Name>_ALL_TABLES_</Name>
                 <DiagramLayout>
                   <dds>
-                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1081" scrolltop="-2764" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18124" y="10583" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3968" scrolltop="-2526" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18124" y="12674" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                       <font>
                         <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                       </font>
@@ -1079,12 +1516,32 @@ CALCULATE; </Text>
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4489" top="-99" logicalid="7" controlid="5" masterid="0" hint1="0" hint2="0" width="1827" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[2020_GT_Region_Mobility_Report-DimTiempo]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="19" destattachpoint="30" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="4789" y="300" />
+                        <point x="5402" y="300" />
+                        <point x="5402" y="327" />
+                        <point x="6016" y="327" />
+                      </connector>
+                    </ddscontrol>
                   </dds>
-</DiagramLayout>
+                </DiagramLayout>
                 <ShowRelationshipNames>False</ShowRelationshipNames>
                 <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
-                <DiagramViewPortLeft>1081</DiagramViewPortLeft>
-                <DiagramViewPortTop>-2764</DiagramViewPortTop>
+                <DiagramViewPortLeft>-3968</DiagramViewPortLeft>
+                <DiagramViewPortTop>-2526</DiagramViewPortTop>
                 <DiagramBoundingLeft>0</DiagramBoundingLeft>
                 <DiagramBoundingTop>0</DiagramBoundingTop>
                 <DiagramZoom>100</DiagramZoom>
@@ -1182,27 +1639,48 @@ CALCULATE; </Text>
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
+                      <xs:element name="Jerarquía_x0020_Dim_x0020_Tiempo_x0020_Cálculos" msprop:Description="Columna creada por el Asistente de Business Intelligence. Se ha creado un atributo en la dimensión de tiempo basado en esta columna. Si se elimina, los cálculos de inteligencia de tiempo definidos en el script de cálculo ya no serán válidos." msprop:design-time-name="d1961278-fc5c-44b6-a9d9-7229b0841255" msprop:IsLogical="True" msprop:ComputedColumnExpression="'Actual Dim Tiempo'" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="19" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Jerarquía_x0020_Dim_x0020_Tiempo_x0020_Cálculos_x0020_1" msprop:Description="Columna creada por el Asistente de Business Intelligence. Se ha creado un atributo en la dimensión de tiempo basado en esta columna. Si se elimina, los cálculos de inteligencia de tiempo definidos en el script de cálculo ya no serán válidos." msprop:design-time-name="f2d41a26-9661-4b53-8acb-60b9c5dafaff" msprop:IsLogical="True" msprop:ComputedColumnExpression="'Actual Dim Tiempo'" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="19" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Jerarquía_x0020_Dim_x0020_Tiempo_x0020_Cálculos_x0020_2" msprop:Description="Columna creada por el Asistente de Business Intelligence. Se ha creado un atributo en la dimensión de tiempo basado en esta columna. Si se elimina, los cálculos de inteligencia de tiempo definidos en el script de cálculo ya no serán válidos." msprop:design-time-name="9ebfc8d7-3019-448f-ab2f-1eeb2fa40735" msprop:IsLogical="True" msprop:ComputedColumnExpression="'Actual Dim Tiempo'" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="19" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_2020_GT_Region_Mobility_Report" msprop:DbSchemaName="dbo" msprop:design-time-name="8344f845-7f0a-4d10-92fe-0db83afebdb3" msprop:FriendlyName="DimCovid" msprop:TableType="Table" msprop:DbTableName="2020_GT_Region_Mobility_Report">
+                <xs:element name="dbo_2020_GT_Region_Mobility_Report" msprop:QueryBuilder="SpecificQueryBuilder" msprop:IsLogical="True" msprop:design-time-name="8344f845-7f0a-4d10-92fe-0db83afebdb3" msprop:QueryDefinition="SELECT        country_region_code, country_region, ISNULL(sub_region_1, '') AS sub_region_1, ISNULL(sub_region_2, '') AS sub_region_2, ISNULL(metro_area, '') AS metro_area, ISNULL(iso_3166_2_code, '') AS iso_3166_2_code, &#xD;&#xA;                         ISNULL(census_fips_code, '') AS census_fips_code, place_id, [date], ISNULL(retail_and_recreation_percent_change_from_baseline, '') AS retail_and_recreation_percent_change_from_baseline, &#xD;&#xA;                         ISNULL(grocery_and_pharmacy_percent_change_from_baseline, '') AS grocery_and_pharmacy_percent_change_from_baseline, ISNULL(parks_percent_change_from_baseline, '') AS parks_percent_change_from_baseline, &#xD;&#xA;                         ISNULL(transit_stations_percent_change_from_baseline, '') AS transit_stations_percent_change_from_baseline, ISNULL(workplaces_percent_change_from_baseline, '') AS workplaces_percent_change_from_baseline, &#xD;&#xA;                         ISNULL(residential_percent_change_from_baseline, '') AS residential_percent_change_from_baseline, Id&#xD;&#xA;FROM            [2020_GT_Region_Mobility_Report]" msprop:FriendlyName="DimCovid" msprop:TableType="View" msprop:DbTableName="2020_GT_Region_Mobility_Report">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="country_region_code" msprop:FriendlyName="country_region_code" msprop:DbColumnName="country_region_code" msprop:design-time-name="a410c5a9-93f3-4f68-982a-9e6611947b12">
+                      <xs:element name="country_region_code" msprop:FriendlyName="country_region_code" msprop:DbColumnName="country_region_code" msprop:design-time-name="a410c5a9-93f3-4f68-982a-9e6611947b12" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="50" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="country_region" msprop:FriendlyName="country_region" msprop:DbColumnName="country_region" msprop:design-time-name="7cf0e150-6e98-4e1e-bdc9-db2049bca48f">
+                      <xs:element name="country_region" msprop:FriendlyName="country_region" msprop:DbColumnName="country_region" msprop:design-time-name="7cf0e150-6e98-4e1e-bdc9-db2049bca48f" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="50" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="sub_region_1" msprop:FriendlyName="sub_region_1" msprop:DbColumnName="sub_region_1" msprop:design-time-name="393c6dd1-0c73-4746-bcf7-f6dc54487249">
+                      <xs:element name="sub_region_1" msprop:FriendlyName="sub_region_1" msprop:DbColumnName="sub_region_1" msprop:design-time-name="393c6dd1-0c73-4746-bcf7-f6dc54487249" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="100" />
@@ -1237,14 +1715,14 @@ CALCULATE; </Text>
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="place_id" msprop:FriendlyName="place_id" msprop:DbColumnName="place_id" msprop:design-time-name="4855a607-1986-4449-a838-eabcbd96c049">
+                      <xs:element name="place_id" msprop:FriendlyName="place_id" msprop:DbColumnName="place_id" msprop:design-time-name="4855a607-1986-4449-a838-eabcbd96c049" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="50" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="date" msprop:FriendlyName="date" msprop:DbColumnName="date" msprop:design-time-name="5f672d6c-ca33-4269-bcc0-dbfa6b3f939a" type="xs:dateTime" />
+                      <xs:element name="date" msprop:FriendlyName="date" msprop:DbColumnName="date" msprop:design-time-name="5f672d6c-ca33-4269-bcc0-dbfa6b3f939a" type="xs:dateTime" minOccurs="0" />
                       <xs:element name="retail_and_recreation_percent_change_from_baseline" msprop:FriendlyName="retail_and_recreation_percent_change_from_baseline" msprop:DbColumnName="retail_and_recreation_percent_change_from_baseline" msprop:design-time-name="67692d31-a92b-4ff6-b240-c7d19f80e9e3" type="xs:short" minOccurs="0" />
                       <xs:element name="grocery_and_pharmacy_percent_change_from_baseline" msprop:FriendlyName="grocery_and_pharmacy_percent_change_from_baseline" msprop:DbColumnName="grocery_and_pharmacy_percent_change_from_baseline" msprop:design-time-name="ab84bcc0-eae6-4310-be9d-95ecdd5895b1" type="xs:short" minOccurs="0" />
                       <xs:element name="parks_percent_change_from_baseline" msprop:FriendlyName="parks_percent_change_from_baseline" msprop:DbColumnName="parks_percent_change_from_baseline" msprop:design-time-name="3ec2ba48-8455-4d0b-b264-883ec9aa7cda" type="xs:short" minOccurs="0" />
@@ -1266,6 +1744,11 @@ CALCULATE; </Text>
               <xs:field xpath="Id" />
             </xs:unique>
           </xs:element>
+          <xs:annotation>
+            <xs:appinfo>
+              <msdata:Relationship name="_x0032_020_GT_Region_Mobility_Report-DimTiempo" msdata:parent="dbo_DimTiempo" msdata:child="dbo_2020_GT_Region_Mobility_Report" msdata:parentkey="PK_Fecha" msdata:childkey="date" msprop:Description="" msprop:IsLogical="True" />
+            </xs:appinfo>
+          </xs:annotation>
         </xs:schema>
         <DESAFIO_x0020_DMD_x0020_1 xmlns="" />
       </Schema>

@@ -48,14 +48,14 @@
           <ConfigurationSetting>
             <Id>DESAFIO DMD</Id>
             <Name>DESAFIO DMD</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=127.0.01;Password=;User ID=;Initial Catalog=DESAFIO_DMD</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=127.0.01;Integrated Security=SSPI;Initial Catalog=DESAFIO_DMD</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>DESAFIO DMD</Id>
             <Name>DESAFIO DMD</Name>
-            <Value xsi:type="xsd:int">1</Value>
+            <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
       </Options>
